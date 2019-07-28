@@ -167,14 +167,12 @@ public class StepImplementation {
     @Step("Take Sceenshot")
     public void takeScreenshot() throws IOException {
         try {
-            String fileName = "/" + String.valueOf(System.currentTimeMillis()) + ".png";
+            String fileName = "/images" + String.valueOf(System.currentTimeMillis()) + ".png";
             final Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.viewportPasting(100)).takeScreenshot(driver);
             final BufferedImage image = screenshot.getImage();        
             String path = System.getProperty("user.dir")+"/reports/html-report/images";
-new File(path).mkdir();
-		System.out.println("hello1"+image);
+            new File(path).mkdir();
             ImageIO.write(image, "PNG", new File(path+fileName));
-             System.out.println("hello2");
             Gauge.writeMessage("<img src=../../../../" + fileName + ">");
             Gauge.writeMessage("<img src=../../../../../" + fileName + ">");
             Gauge.writeMessage("<img src=../../../" + fileName + ">");
