@@ -27,7 +27,8 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class StepImplementation {
 
-    public WebDriver driver = null;
+    //public WebDriver driver = null;
+    private static RemoteWebDriver driver;
 
     @Step("user launch a browser <browserName>")
     public void invokeBrowser(String browserName) {
