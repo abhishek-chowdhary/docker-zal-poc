@@ -43,7 +43,7 @@ public class StepImplementation {
                 ChromeOptions options = new ChromeOptions();
                 dcap.setCapability(ChromeOptions.CAPABILITY, options);
                 
-                URL url = new URL("http://zalenium.io:4444/wd/hub");
+                URL url = new URL("http://13.235.13.104:4444/wd/hub");
                 //URL url = new URL("http://localhost:4444/wd/hub");
               //  URL url = new URL("http://172.17.0.2:4445/wd/hub");
 
