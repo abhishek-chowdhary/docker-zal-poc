@@ -43,7 +43,7 @@ public class StepImplementation {
                 ChromeOptions options = new ChromeOptions();
                 dcap.setCapability(ChromeOptions.CAPABILITY, options);
                 
-                URL url = new URL("http://35.154.192.139:4444/wd/hub");
+                URL url = new URL("http://13.232.186.61:4444/wd/hub");
                 //URL url = new URL("http://localhost:4444/wd/hub");
               //  URL url = new URL("http://172.17.0.2:4445/wd/hub");
 
